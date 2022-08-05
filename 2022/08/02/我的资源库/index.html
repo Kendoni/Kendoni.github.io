@@ -393,15 +393,16 @@
   <div class="disqus" style="width:100%">
     <div id="disqus_thread"></div>
     
-      <script>
+      <script type="text/javascript">
+        var disqus_config = function() {
+          this.page.url = 'http://kendoni.github.io/2022/08/02/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90%E5%BA%93/';
+          this.page.identifier = '/2022/08/02/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90%E5%BA%93/';
+        };
         Fluid.utils.loadComments('#disqus_thread', function() {
-          Fluid.utils.createCssLink('https://lib.baomitu.com/disqusjs/1.3.0/disqusjs.css');
-          Fluid.utils.createScript('https://lib.baomitu.com/disqusjs/1.3.0/disqus.js', function() {
-            new DisqusJS({
-              shortname: 'Kendoni',
-              apikey: 'BqCpNZzF1z0GHR7qADryjZlKnrgwg9Ky7rgXv5wyFyCJE7Hw727a6EE7bJlcTv9r'
-            });
-          });
+          var d = document, s = d.createElement('script');
+          s.src = '//' + 'Kendoni' + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', new Date());
+          (d.head || d.body).appendChild(s);
         });
       </script>
     
