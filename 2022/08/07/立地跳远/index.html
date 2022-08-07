@@ -16,22 +16,24 @@
   <meta name="author" content="Kendoni">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前提 python代码中要import matplotlib（画函数图像）和sympy（微分，积分） 安装代码： sudo pip install sympy -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple&#x2F; sudo pip install matplotlib  实现效果： 已知位移函数，速度函数和加速度函数中任意一个，可以求出另外两个及其图像  fe">
+    <meta name="description" content="日期 完成情况     8月7日 已完成   8月8日">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python实现位移函数，速度函数和加速度函数互换（微积分）">
-<meta property="og:url" content="http://kendoni.github.io/2022/08/04/Python%E5%AE%9E%E7%8E%B0%E4%BD%8D%E7%A7%BB%E5%87%BD%E6%95%B0%EF%BC%8C%E9%80%9F%E5%BA%A6%E5%87%BD%E6%95%B0%E5%92%8C%E5%8A%A0%E9%80%9F%E5%BA%A6%E5%87%BD%E6%95%B0%E4%BA%92%E6%8D%A2/index.html">
+<meta property="og:title" content="立地跳远">
+<meta property="og:url" content="http://kendoni.github.io/2022/08/07/%E7%AB%8B%E5%9C%B0%E8%B7%B3%E8%BF%9C/index.html">
 <meta property="og:site_name" content="Kendoni">
-<meta property="og:description" content="前提 python代码中要import matplotlib（画函数图像）和sympy（微分，积分） 安装代码： sudo pip install sympy -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple&#x2F; sudo pip install matplotlib  实现效果： 已知位移函数，速度函数和加速度函数中任意一个，可以求出另外两个及其图像  fe">
+<meta property="og:description" content="日期 完成情况     8月7日 已完成   8月8日">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-03T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-08-07T11:07:02.821Z">
+<meta property="og:image" content="https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wOC9DSkZBUDR2eDJkbkM2dWpzLnBuZ0AzMDB3XzBlLndlYnA=&amp;creator=Kendoni&amp;is_creating=building%20the%20world&amp;design_code=1&amp;design_color=%235F7FFF&amp;slug=kend0ni">
+<meta property="article:published_time" content="2022-08-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-07T09:59:47.392Z">
 <meta property="article:author" content="Kendoni">
-<meta property="article:tag" content="物理">
+<meta property="article:tag" content="体育">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wOC9DSkZBUDR2eDJkbkM2dWpzLnBuZ0AzMDB3XzBlLndlYnA=&amp;creator=Kendoni&amp;is_creating=building%20the%20world&amp;design_code=1&amp;design_color=%235F7FFF&amp;slug=kend0ni">
   
   
   
-  <title>Python实现位移函数，速度函数和加速度函数互换（微积分） - Kendoni</title>
+  <title>立地跳远 - Kendoni</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -200,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Python实现位移函数，速度函数和加速度函数互换（微积分）"></span>
+            <span id="subtitle" data-typed-text="立地跳远"></span>
           
         </div>
 
@@ -211,8 +213,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-04 00:00" pubdate>
-          2022年8月4日 凌晨
+        <time datetime="2022-08-07 00:00" pubdate>
+          2022年8月7日 凌晨
         </time>
       </span>
     
@@ -223,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          17 字
         
       </span>
     
@@ -234,7 +236,7 @@
         
         
         
-          14 分钟
+          1 分钟
         
       </span>
     
@@ -272,27 +274,115 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Python实现位移函数，速度函数和加速度函数互换（微积分）</h1>
+            <h1 style="display: none">立地跳远</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="前提"><a class="markdownIt-Anchor" href="#前提"></a> 前提</h3>
-<p>python代码中要import <code>matplotlib</code>（画函数图像）和<code>sympy</code>（微分，积分）</p>
-<p>安装代码：</p>
-<p><code>sudo pip install sympy -i https://pypi.tuna.tsinghua.edu.cn/simple/</code></p>
-<p><code>sudo pip install matplotlib</code></p>
-<h3 id="实现效果"><a class="markdownIt-Anchor" href="#实现效果"></a> 实现效果：</h3>
-<p>已知位移函数，速度函数和加速度函数中任意一个，可以求出另外两个及其图像</p>
-<h3 id="feature"><a class="markdownIt-Anchor" href="#feature"></a> feature</h3>
-<ul>
-<li>由于python是一行一行编译的，所以函数图像是一个一个显示，要退出一个才能看下一个</li>
-<li>由于使用了<code>eval</code>在字符串和数学表达式之间转化，所以只能用<code>x</code>表示，<code>2x</code>必须写成<code>2*x</code></li>
-<li>注意：<code>matplotlib</code>会改变x轴和y轴让图像更合理</li>
-<li>代码比较拉，可能不容易懂，但很高兴实现了功能</li>
-</ul>
-<h3 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># sudo pip install sympy -i https://pypi.tuna.tsinghua.edu.cn/simple/</span><br><span class="hljs-comment"># sudo pip install matplotlib</span><br><span class="hljs-keyword">import</span> sympy<br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> warnings<br>warnings.filterwarnings(<span class="hljs-string">&#x27;ignore&#x27;</span>) <span class="hljs-comment"># 编译时总提示，很影响美感，于是就把它解决了XD</span><br><br>f_type = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&#x27;Please enter the function type[0.displacement / 1.velocity / 2.acceleration]: &#x27;</span>))<br>function = <span class="hljs-built_in">input</span>(<span class="hljs-string">&#x27;Express in an algebraic expression containing x: y=&#x27;</span>)<br>x = sympy.Symbol(<span class="hljs-string">&#x27;x&#x27;</span>)<br><br><span class="hljs-comment"># 根据类型求其他函数，必须要将式子变成str再在下面变回表达式才能将式子作为函数运算</span><br><span class="hljs-keyword">if</span> (f_type == <span class="hljs-number">0</span>):<br>    f1 = <span class="hljs-built_in">eval</span>(function)<br>    f2 = <span class="hljs-built_in">str</span>(sympy.diff(f1))<br>    f3 = <span class="hljs-built_in">str</span>(sympy.diff(f2))<br>    f1 = <span class="hljs-built_in">str</span>(f1)<br><span class="hljs-keyword">elif</span> (f_type == <span class="hljs-number">1</span>):<br>    f2 = <span class="hljs-built_in">eval</span>(function)<br>    f1 = <span class="hljs-built_in">str</span>(sympy.integrate(f2))<br>    f3 = <span class="hljs-built_in">str</span>(sympy.diff(f2))<br>    f2 = <span class="hljs-built_in">str</span>(f2)<br><span class="hljs-keyword">else</span>:<br>    f3 = <span class="hljs-built_in">eval</span>(function)<br>    f2 = <span class="hljs-built_in">str</span>(sympy.integrate(f3))<br>    f1 = <span class="hljs-built_in">str</span>(sympy.integrate(f2))<br>    f3 = <span class="hljs-built_in">str</span>(f3)<br><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Displacement: y =&quot;</span>,f1)<br>f_xnum = np.linspace(-<span class="hljs-number">100</span>,<span class="hljs-number">100</span>,<span class="hljs-number">1000</span>)<br>f_ynum = [<span class="hljs-built_in">eval</span>(f1) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> f_xnum]<br>fig = plt.figure()<br>fig.canvas.set_window_title(<span class="hljs-string">&#x27;Displacement&#x27;</span>)<br>plt.plot(f_xnum,f_ynum)<br>plt.show()<br><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Velocity: y =&quot;</span>,f2)<br>f_ynum = [<span class="hljs-built_in">eval</span>(f2) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> f_xnum]<br>fig = plt.figure()<br>fig.canvas.set_window_title(<span class="hljs-string">&#x27;Velocity&#x27;</span>)<br>plt.plot(f_xnum,f_ynum)<br>plt.show()<br><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Acceleration: y =&quot;</span>,f3)<br>f_ynum = [<span class="hljs-built_in">eval</span>(f3) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> f_xnum]<br>fig = plt.figure()<br>fig.canvas.set_window_title(<span class="hljs-string">&#x27;Acceleration&#x27;</span>)<br>plt.plot(f_xnum,f_ynum)<br>plt.show()<br></code></pre></td></tr></table></figure>
+                <table>
+<thead>
+<tr>
+<th style="text-align:center">日期</th>
+<th style="text-align:center">完成情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">8月7日</td>
+<td style="text-align:center">已完成</td>
+</tr>
+<tr>
+<td style="text-align:center">8月8日</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a target="_blank" rel="noopener" href="https://www.buymeacoffee.com/kend0ni"><img src="https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wOC9DSkZBUDR2eDJkbkM2dWpzLnBuZ0AzMDB3XzBlLndlYnA=&amp;creator=Kendoni&amp;is_creating=building%20the%20world&amp;design_code=1&amp;design_color=%235F7FFF&amp;slug=kend0ni" srcset="/img/loading.gif" lazyload alt="" /></a></p>
 
                 
               </div>
@@ -305,7 +395,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%89%A9%E7%90%86/">#物理</a>
+        <a href="/tags/%E4%BD%93%E8%82%B2/">#体育</a>
       
     </div>
   
@@ -317,8 +407,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Python实现位移函数，速度函数和加速度函数互换（微积分）</div>
-      <div>http://kendoni.github.io/2022/08/04/Python实现位移函数，速度函数和加速度函数互换/</div>
+      <div>立地跳远</div>
+      <div>http://kendoni.github.io/2022/08/07/立地跳远/</div>
     </div>
     <div class="license-meta">
       
@@ -330,7 +420,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年8月4日</div>
+          <div>2022年8月7日</div>
         </div>
       
       
@@ -360,18 +450,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/08/06/%E7%94%B5%E5%9C%BA%E5%92%8C%E7%94%B5%E8%8D%B7/" title="三十天学完高中物理：电场和电荷">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">三十天学完高中物理：电场和电荷</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/08/03/%E5%A6%82%E4%BD%95%E6%8F%8F%E8%BF%B0%E8%BF%90%E5%8A%A8/" title="三十天学完高中物理：如何描述运动">
-                        <span class="hidden-mobile">三十天学完高中物理：如何描述运动</span>
+                      <a href="/2022/08/06/%E5%90%AC%E5%8A%9B806/" title="听力">
+                        <span class="hidden-mobile">听力</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
